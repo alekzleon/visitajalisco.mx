@@ -896,8 +896,10 @@
             scroll-snap-align: start;
             background:
                 linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .82) 100%),
-                radial-gradient(circle at 70% 24%, rgba(255, 255, 255, .22), transparent 24%),
+                var(--place-image),
                 linear-gradient(135deg, var(--place-a), var(--place-b));
+            background-size: cover;
+            background-position: center;
             box-shadow: 0 20px 42px rgba(0, 0, 0, .22);
         }
 
@@ -905,7 +907,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, transparent 0 33%, rgba(255, 255, 255, .18) 33% 35%, transparent 35% 100%);
+            background: linear-gradient(180deg, rgba(0, 0, 0, .04), rgba(0, 0, 0, .16));
         }
 
         .place-card strong {
@@ -1371,21 +1373,21 @@
                         <button class="places-arrow prev" type="button" data-places-prev aria-label="Destino anterior">‹</button>
                         <div class="places-track" data-places-track>
                             @foreach ([
-                                ['Tequila', '#1b6f63', '#d9a441'],
-                                ['Ajijic', '#1f6a8a', '#f07f4f'],
-                                ['Chapala', '#0f5d7a', '#70b7c6'],
-                                ['Lagos de Moreno', '#6f452b', '#d8a45d'],
-                                ['Mascota', '#264f3f', '#9bbf74'],
-                                ['Mazamitla', '#173f47', '#6ea66b'],
-                                ['Cocula', '#7a2648', '#ff9f1c'],
-                                ['Sayula', '#353b5f', '#b57d62'],
-                                ['Tapalpa', '#285943', '#c5a46d'],
-                                ['San Pedro Tlaquepaque', '#7c2d2d', '#e0a458'],
-                            ] as [$destination, $colorA, $colorB])
-                                <a class="place-card" href="{{ route('track.destinations.interest', \Illuminate\Support\Str::slug($destination)) }}" style="--place-a: {{ $colorA }}; --place-b: {{ $colorB }};">
+                                ['Tequila', '#1b6f63', '#d9a441', 'tequila.jpg'],
+                                ['Ajijic', '#1f6a8a', '#f07f4f', 'ajijic.jpg'],
+                                ['Chapala', '#0f5d7a', '#70b7c6', 'chapala.jpg'],
+                                ['Lagos de Moreno', '#6f452b', '#d8a45d', 'lagosm.webp'],
+                                ['Mascota', '#264f3f', '#9bbf74', 'mascota.jpg'],
+                                ['Mazamitla', '#173f47', '#6ea66b', 'mazamitl.jpg'],
+                                ['Cocula', '#7a2648', '#ff9f1c', 'cocula.jpg'],
+                                ['Sayula', '#353b5f', '#b57d62', 'sayula.jpeg'],
+                                ['Tapalpa', '#285943', '#c5a46d', 'tapalpa.jpg'],
+                                ['San Pedro Tlaquepaque', '#7c2d2d', '#e0a458', 'tlaquepaque.jpeg'],
+                            ] as [$destination, $colorA, $colorB, $image])
+                                <article class="place-card" style="--place-a: {{ $colorA }}; --place-b: {{ $colorB }}; --place-image: url('{{ asset('assets/img/destinos/' . $image) }}');">
                                     <strong>{{ $destination }}</strong>
                                     <span aria-hidden="true">›</span>
-                                </a>
+                                </article>
                             @endforeach
                         </div>
                         <button class="places-arrow next" type="button" data-places-next aria-label="Destino siguiente">›</button>
