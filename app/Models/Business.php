@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use App\Support\PublicUrl;
 
 class Business extends Model
 {
@@ -57,7 +58,7 @@ class Business extends Model
 
     public function imageUrl(): string
     {
-        return $this->image_url ?: asset('assets/img/business-placeholder.svg');
+        return PublicUrl::asset($this->image_url, 'assets/img/business-placeholder.svg');
     }
 
     public function mapsUrl(): ?string

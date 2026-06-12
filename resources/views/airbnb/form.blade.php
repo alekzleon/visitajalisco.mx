@@ -26,7 +26,7 @@
             <div class="full">
                 <span style="display:block;color:var(--muted);font-size:13px;font-weight:800;margin-bottom:8px;">Galería actual / vista previa</span>
                 <div id="airbnb-gallery-preview" style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;">
-                    @forelse (($airbnb->gallery_images ?? []) as $image)
+                    @forelse ($airbnb->galleryImageUrls() as $image)
                         <img src="{{ $image }}" alt="Imagen del hospedaje" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid var(--line);">
                     @empty
                         <p style="grid-column:1/-1;margin:0;color:var(--muted);font-size:13px;">Selecciona imágenes para verlas antes de guardar.</p>

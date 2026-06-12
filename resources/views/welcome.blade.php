@@ -1313,7 +1313,7 @@
                                     asset('assets/img/airbnb-card-3.svg'),
                                     asset('assets/img/airbnb-card-4.svg'),
                                 ];
-                                $galleryImages = $airbnb->gallery_images ?: [
+                                $galleryImages = $airbnb->galleryImageUrls() ?: [
                                     $fallbackImages[($loop->iteration - 1) % count($fallbackImages)],
                                     $fallbackImages[$loop->iteration % count($fallbackImages)],
                                 ];

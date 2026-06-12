@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Support\PublicUrl;
 
 class PremiumService extends Model
 {
@@ -30,7 +31,7 @@ class PremiumService extends Model
 
     public function imageUrl(): string
     {
-        return $this->image_url ?: asset('assets/img/public-ad-placeholder.svg');
+        return PublicUrl::asset($this->image_url, 'assets/img/public-ad-placeholder.svg');
     }
 
     public function whatsappUrl(): ?string
