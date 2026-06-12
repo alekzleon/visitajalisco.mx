@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Lugar mágico de Jalisco</title>
+  <desc id="desc">Imagen de referencia para un espacio publicitario turístico.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f5d7a"/>
+      <stop offset=".48" stop-color="#168aad"/>
+      <stop offset="1" stop-color="#ff9f1c"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111c" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#07111c" stop-opacity=".72"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#sky)"/>
+  <circle cx="920" cy="170" r="82" fill="#fff8d6" opacity=".9"/>
+  <path d="M0 490 150 365l155 94 165-153 176 177 142-124 175 142 237-194v443H0z" fill="#1f513c" opacity=".86"/>
+  <path d="M0 588c132-44 236-58 382-34 188 31 297 96 496 52 134-30 220-83 322-70v214H0z" fill="#102b25" opacity=".82"/>
+  <path d="M89 470h210v178H89z" fill="#f8efe4"/>
+  <path d="M62 470h264L194 360z" fill="#be3a34"/>
+  <path d="M137 524h52v124h-52zM220 524h42v56h-42z" fill="#1b2438"/>
+  <path d="M414 441h232v207H414z" fill="#f1d7ad"/>
+  <path d="M384 441h292L530 316z" fill="#7c2d2d"/>
+  <path d="M469 514h57v134h-57zM566 514h45v60h-45z" fill="#24314d"/>
+  <path d="M758 479h258v169H758z" fill="#f4eadf"/>
+  <path d="M728 479h318L887 348z" fill="#c55f28"/>
+  <path d="M825 534h58v114h-58zM921 534h52v58h-52z" fill="#17233a"/>
+  <rect width="1200" height="750" fill="url(#shade)"/>
+  <text x="72" y="645" fill="#fff" font-family="Arial, sans-serif" font-size="58" font-weight="800">Jalisco te espera</text>
+  <text x="76" y="696" fill="#fff" font-family="Arial, sans-serif" font-size="28" font-weight="700" opacity=".9">Espacio publicitario</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Paisaje abstracto de Jalisco">
+    <defs>
+        <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+            <stop stop-color="#0d4f64"/>
+            <stop offset=".42" stop-color="#8cc6d8"/>
+            <stop offset="1" stop-color="#0e766f"/>
+        </linearGradient>
+        <filter id="blur">
+            <feGaussianBlur stdDeviation="30"/>
+        </filter>
+    </defs>
+    <rect width="1600" height="900" fill="url(#sky)"/>
+    <g opacity=".46" filter="url(#blur)">
+        <path d="M112 0h150l-82 900H10zM470 0h105l-50 900H390zM920 0h205l-132 900H800zM1320 0h190l-160 900h-105z" fill="#d8f5ff"/>
+    </g>
+    <g opacity=".22">
+        <circle cx="790" cy="430" r="150" fill="#1b1b1b"/>
+        <path d="M780 300c42 80 67 174 75 284 4 60-36 128-90 130-58 2-92-78-82-138 14-92 39-176 97-276z" fill="#f4efe7"/>
+    </g>
+</svg>
