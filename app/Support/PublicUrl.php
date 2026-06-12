@@ -16,6 +16,8 @@ class PublicUrl
             return $path;
         }
 
-        return asset(ltrim($path, '/'));
+        $baseUrl = rtrim((string) config('app.asset_url', config('app.url')), '/');
+
+        return $baseUrl . '/' . ltrim($path, '/');
     }
 }
