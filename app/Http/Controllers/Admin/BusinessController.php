@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Business;
 use App\Models\User;
 use App\Models\Zone;
+use App\Support\PublicUpload;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
 use Illuminate\View\View;
 
@@ -81,12 +81,8 @@ class BusinessController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            if ($business?->image_url && str_starts_with($business->image_url, '/storage/businesses/')) {
-                Storage::disk('public')->delete(str_replace('/storage/', '', $business->image_url));
-            }
-
-            $path = $request->file('image')->store('businesses', 'public');
-            $data['image_url'] = Storage::url($path);
+            PublicUpload::delete($business?->image_url);
+            $data['image_url'] = PublicUpload::store($request->file('image'), 'businesses');
         }
 
         unset($data['image']);

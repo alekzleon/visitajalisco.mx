@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\PremiumService;
+use App\Support\PublicUpload;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class PremiumServiceController extends Controller
@@ -67,12 +67,8 @@ class PremiumServiceController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            if ($premiumService?->image_url && str_starts_with($premiumService->image_url, '/storage/premium-services/')) {
-                Storage::disk('public')->delete(str_replace('/storage/', '', $premiumService->image_url));
-            }
-
-            $path = $request->file('image')->store('premium-services', 'public');
-            $data['image_url'] = Storage::url($path);
+            PublicUpload::delete($premiumService?->image_url);
+            $data['image_url'] = PublicUpload::store($request->file('image'), 'premium-services');
         }
 
         unset($data['image']);

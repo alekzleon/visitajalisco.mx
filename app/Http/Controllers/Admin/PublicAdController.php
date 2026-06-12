@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\PublicAd;
+use App\Support\PublicUpload;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class PublicAdController extends Controller
@@ -64,12 +64,8 @@ class PublicAdController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            if ($publicAd?->image_url && str_starts_with($publicAd->image_url, '/storage/public-ads/')) {
-                Storage::disk('public')->delete(str_replace('/storage/', '', $publicAd->image_url));
-            }
-
-            $path = $request->file('image')->store('public-ads', 'public');
-            $data['image_url'] = Storage::url($path);
+            PublicUpload::delete($publicAd?->image_url);
+            $data['image_url'] = PublicUpload::store($request->file('image'), 'public-ads');
         }
 
         unset($data['image']);

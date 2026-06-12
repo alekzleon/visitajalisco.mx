@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Airbnb;
 
 use App\Http\Controllers\Controller;
 use App\Models\Airbnb;
+use App\Support\PublicUpload;
 use BaconQrCode\Renderer\Image\SvgImageBackEnd;
 use BaconQrCode\Renderer\ImageRenderer;
 use BaconQrCode\Renderer\RendererStyle\RendererStyle;
@@ -11,7 +12,6 @@ use BaconQrCode\Writer;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class AirbnbDashboardController extends Controller
@@ -53,14 +53,12 @@ class AirbnbDashboardController extends Controller
 
         if ($request->hasFile('gallery_images')) {
             foreach ($airbnb->gallery_images ?? [] as $image) {
-                if (str_starts_with($image, '/storage/airbnbs/')) {
-                    Storage::disk('public')->delete(str_replace('/storage/', '', $image));
-                }
+                PublicUpload::delete($image);
             }
 
             $data['gallery_images'] = collect($request->file('gallery_images'))
                 ->take(5)
-                ->map(fn ($image) => Storage::url($image->store('airbnbs', 'public')))
+                ->map(fn ($image) => PublicUpload::store($image, 'airbnbs'))
                 ->values()
                 ->all();
         } else {
