@@ -1,0 +1,19 @@
+{
+  "ga4": {
+    "identical": true,
+    "sha256": "13f35829e0ec9f572b489cb885f061909e20f90e34de1793d9115a552a3aba72"
+  },
+  "scripts": {
+    "identical": true,
+    "sha256": "f806c88959faf509a008c6d912a76fbe89dbb5dab552340a203892547ea36347"
+  },
+  "analytics_assignment_identical": true,
+  "existing_routes_identical": true,
+  "protected_files": {
+    "config/services.php": true,
+    "app/Models/AnalyticsEvent.php": true,
+    "app/Http/Controllers/TrackingController.php": true,
+    "resources/views/stays/show.blade.php": true,
+    "resources/views/privacy.blade.php": true
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "destino": "tequila",
+    "original_bytes": 140700,
+    "servido_bytes": 101900,
+    "formato": "WebP"
+  },
+  {
+    "destino": "ajijic",
+    "original_bytes": 3990566,
+    "servido_bytes": 143274,
+    "formato": "WebP"
+  },
+  {
+    "destino": "chapala",
+    "original_bytes": 220696,
+    "servido_bytes": 93436,
+    "formato": "WebP"
+  },
+  {
+    "destino": "lagos-de-moreno",
+    "original_bytes": 278660,
+    "servido_bytes": 135904,
+    "formato": "WebP"
+  },
+  {
+    "destino": "mascota",
+    "original_bytes": 315895,
+    "servido_bytes": 168470,
+    "formato": "WebP"
+  },
+  {
+    "destino": "mazamitla",
+    "original_bytes": 189221,
+    "servido_bytes": 153206,
+    "formato": "WebP"
+  },
+  {
+    "destino": "cocula",
+    "original_bytes": 1383751,
+    "servido_bytes": 203452,
+    "formato": "WebP"
+  },
+  {
+    "destino": "sayula",
+    "original_bytes": 9295,
+    "servido_bytes": 9295,
+    "formato": "JPEG original"
+  },
+  {
+    "destino": "tapalpa",
+    "original_bytes": 101974,
+    "servido_bytes": 66822,
+    "formato": "WebP"
+  },
+  {
+    "destino": "tlaquepaque",
+    "original_bytes": 111869,
+    "servido_bytes": 64876,
+    "formato": "WebP"
+  }
+]

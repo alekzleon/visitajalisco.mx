@@ -131,7 +131,7 @@
             @csrf
             <label>
                 Correo
-                <input name="email" type="email" value="{{ old('email', 'admin@visitajalisco.mx') }}" autocomplete="email" required autofocus>
+                <input name="email" type="email" value="{{ old('email') }}" autocomplete="email" required autofocus>
             </label>
 
             <label>
@@ -151,7 +151,7 @@
             @enderror
         </form>
 
-        <p class="hint">Usuario inicial: admin@visitajalisco.mx · contraseña: password</p>
     </main>
+    <footer style="width:min(920px,100%);margin:24px auto;padding:16px">@include('partials.policy-links')</footer>
 </body>
 </html>

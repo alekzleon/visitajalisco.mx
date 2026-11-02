@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "slug": "ajijic",
+      "overflow": false,
+      "h1": 1,
+      "heroImage": 1200,
+      "nav": true,
+      "footer": true,
+      "relatedImages": true
+    },
+    {
+      "width": 390,
+      "slug": "chapala",
+      "overflow": false,
+      "h1": 1,
+      "heroImage": 1200,
+      "nav": true,
+      "footer": true,
+      "relatedImages": true
+    },
+    {
+      "width": 1440,
+      "slug": "ajijic",
+      "overflow": false,
+      "h1": 1,
+      "heroImage": 1200,
+      "nav": true,
+      "footer": true,
+      "relatedImages": true
+    },
+    {
+      "width": 1440,
+      "slug": "chapala",
+      "overflow": false,
+      "h1": 1,
+      "heroImage": 1200,
+      "nav": true,
+      "footer": true,
+      "relatedImages": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,48 @@
+{
+  "home_ga4": {
+    "identical": true,
+    "sha256": "13f35829e0ec9f572b489cb885f061909e20f90e34de1793d9115a552a3aba72"
+  },
+  "home_ga4_assignment": true,
+  "home_script_order": true,
+  "stays_ga4": {
+    "identical": true,
+    "sha256": "6fb541588bcd1ee251e9c7fffd73e437d7bb14a154400177b1109aec12d62543"
+  },
+  "stays_ga4_assignment": true,
+  "stays_script_order": true,
+  "home_existing_javascript_identical": true,
+  "home_route_and_event_identical": true,
+  "tracking_auth_and_airbnb_routes_identical": true,
+  "existing_protected_files": {
+    "app/Providers/AppServiceProvider.php": true,
+    "app/Models/PremiumService.php": true,
+    "app/Models/User.php": true,
+    "app/Models/Airbnb.php": true,
+    "app/Models/PublicAd.php": true,
+    "app/Models/Business.php": true,
+    "app/Models/Zone.php": true,
+    "app/Models/AnalyticsEvent.php": true,
+    "app/Support/PublicUpload.php": true,
+    "app/Support/PublicUrl.php": true,
+    "app/Http/Middleware/EnsureBusiness.php": true,
+    "app/Http/Middleware/EnsureAirbnb.php": true,
+    "app/Http/Middleware/EnsureAdmin.php": true,
+    "app/Http/Controllers/Controller.php": true,
+    "app/Http/Controllers/DashboardController.php": true,
+    "app/Http/Controllers/AuthController.php": true,
+    "app/Http/Controllers/TrackingController.php": true,
+    "app/Http/Controllers/Airbnb/AirbnbDashboardController.php": true,
+    "app/Http/Controllers/Business/BusinessDashboardController.php": true,
+    "app/Http/Controllers/Admin/UserController.php": true,
+    "app/Http/Controllers/Admin/PremiumServiceController.php": true,
+    "app/Http/Controllers/Admin/AirbnbController.php": true,
+    "app/Http/Controllers/Admin/PublicAdController.php": true,
+    "app/Http/Controllers/Admin/BusinessController.php": true,
+    "app/Http/Controllers/Admin/ZoneController.php": true,
+    "bootstrap/app.php": true,
+    "config/services.php": true,
+    "routes/api.php": true
+  },
+  "stay_change_only_footer": true
+}

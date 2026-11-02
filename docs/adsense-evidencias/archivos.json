@@ -1,0 +1,134 @@
+[
+  {
+    "path": "app/Http/Controllers/InformationController.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "app/Support/SitePublication.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "config/adsense.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "config/site_operator.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/ADSENSE_AUDITORIA_INICIAL.md",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/ADSENSE_CAMBIOS_REALIZADOS.md",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/ADSENSE_CHECKLIST_PRE_REVISION.md",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/ADSENSE_GUIA_PROPIETARIO.md",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/ADSENSE_PENDIENTES_DEL_PROPIETARIO.md",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/adsense-evidencias/archivos.json",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/adsense-evidencias/build-vite.json",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/adsense-evidencias/escaneo-release.json",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/adsense-evidencias/http-publico-antes.json",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/adsense-evidencias/integridad.json",
+    "state": "nuevo"
+  },
+  {
+    "path": "docs/adsense-evidencias/navegador-y-http-local.json",
+    "state": "nuevo"
+  },
+  {
+    "path": "public/ads.txt",
+    "state": "nuevo"
+  },
+  {
+    "path": "resources/views/auth/login.blade.php",
+    "state": "modificado"
+  },
+  {
+    "path": "resources/views/destinations/show.blade.php",
+    "state": "modificado"
+  },
+  {
+    "path": "resources/views/destinations/sitemap.blade.php",
+    "state": "modificado"
+  },
+  {
+    "path": "resources/views/information/about.blade.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "resources/views/information/contact.blade.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "resources/views/information/cookies.blade.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "resources/views/information/layout.blade.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "resources/views/information/terms.blade.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "resources/views/layouts/dashboard.blade.php",
+    "state": "modificado"
+  },
+  {
+    "path": "resources/views/partials/adsense-verification.blade.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "resources/views/partials/policy-links.blade.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "resources/views/privacy.blade.php",
+    "state": "modificado"
+  },
+  {
+    "path": "resources/views/stays/show.blade.php",
+    "state": "modificado"
+  },
+  {
+    "path": "resources/views/welcome.blade.php",
+    "state": "modificado"
+  },
+  {
+    "path": "routes/web.php",
+    "state": "modificado"
+  },
+  {
+    "path": "tests/Feature/AdSensePreparationTest.php",
+    "state": "nuevo"
+  },
+  {
+    "path": "tests/Feature/TourismSeoTest.php",
+    "state": "modificado"
+  }
+]

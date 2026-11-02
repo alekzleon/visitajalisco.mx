@@ -1,0 +1,385 @@
+{
+  "http": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 54130
+    },
+    {
+      "path": "/aviso-de-privacidad",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 10822
+    },
+    {
+      "path": "/politica-de-cookies",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 8160
+    },
+    {
+      "path": "/terminos-y-condiciones",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 6898
+    },
+    {
+      "path": "/contacto",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 4111
+    },
+    {
+      "path": "/sobre-nosotros",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 4694
+    },
+    {
+      "path": "/ads.txt",
+      "status": 200,
+      "type": "text/plain; charset=UTF-8",
+      "bytes": 59,
+      "validAds": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "type": "text/plain; charset=UTF-8",
+      "bytes": 71
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "type": "application/xml; charset=UTF-8",
+      "bytes": 1162
+    },
+    {
+      "path": "/destinos/ajijic",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 19116
+    },
+    {
+      "path": "/revision-adsense-inexistente",
+      "status": 404,
+      "type": "text/html; charset=utf-8",
+      "bytes": 6603
+    }
+  ],
+  "results": [
+    {
+      "width": 390,
+      "path": "/aviso-de-privacidad",
+      "title": "Aviso de privacidad | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [
+        "mailto:info@visitajalisco.mx"
+      ],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 390,
+      "path": "/politica-de-cookies",
+      "title": "Política de cookies | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 390,
+      "path": "/terminos-y-condiciones",
+      "title": "Términos y condiciones | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 390,
+      "path": "/contacto",
+      "title": "Contacto | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [
+        "mailto:info@visitajalisco.mx",
+        "mailto:info@visitajalisco.mx"
+      ],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 390,
+      "path": "/sobre-nosotros",
+      "title": "Sobre nosotros | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "title": "Visita Jalisco: destinos, pueblos y experiencias locales",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "#inicio",
+        "#destinos",
+        "#locales",
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A",
+      "banner": {
+        "stored": "accepted",
+        "hidden": true
+      }
+    },
+    {
+      "width": 390,
+      "path": "/destinos/ajijic",
+      "title": "Qué hacer en Ajijic, Jalisco | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 390,
+      "path": "/login",
+      "title": "Ingresar | Visita Jalisco",
+      "overflow": false,
+      "h1": 0,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "INPUT"
+    },
+    {
+      "width": 1440,
+      "path": "/aviso-de-privacidad",
+      "title": "Aviso de privacidad | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [
+        "mailto:info@visitajalisco.mx"
+      ],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 1440,
+      "path": "/politica-de-cookies",
+      "title": "Política de cookies | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 1440,
+      "path": "/terminos-y-condiciones",
+      "title": "Términos y condiciones | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 1440,
+      "path": "/contacto",
+      "title": "Contacto | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [
+        "mailto:info@visitajalisco.mx",
+        "mailto:info@visitajalisco.mx"
+      ],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 1440,
+      "path": "/sobre-nosotros",
+      "title": "Sobre nosotros | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "title": "Visita Jalisco: destinos, pueblos y experiencias locales",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "#inicio",
+        "#destinos",
+        "#locales",
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 1440,
+      "path": "/destinos/ajijic",
+      "title": "Qué hacer en Ajijic, Jalisco | Visita Jalisco",
+      "overflow": false,
+      "h1": 1,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "A"
+    },
+    {
+      "width": 1440,
+      "path": "/login",
+      "title": "Ingresar | Visita Jalisco",
+      "overflow": false,
+      "h1": 0,
+      "footerLinks": [
+        "/aviso-de-privacidad",
+        "/politica-de-cookies",
+        "/terminos-y-condiciones",
+        "/sobre-nosotros",
+        "/contacto"
+      ],
+      "brokenVisibleImages": [],
+      "contact": [],
+      "adScripts": 0,
+      "keyboardFocus": "INPUT"
+    }
+  ],
+  "errors": [],
+  "externalHostsBlocked": [
+    "www.googletagmanager.com"
+  ]
+}

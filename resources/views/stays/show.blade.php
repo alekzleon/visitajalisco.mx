@@ -507,6 +507,7 @@
             <img class="footer-logo" src="/assets/img/logos/logo_visitajalisco_cuadrado.png" alt="Visita Jalisco">
             <span>{{ $airbnb->tower }} · {{ $airbnb->name }}</span>
         </div>
+        <div style="max-width:1100px;margin:auto;padding:16px 24px">@include('partials.policy-links')</div>
     </footer>
 
     <div class="creator-strip">

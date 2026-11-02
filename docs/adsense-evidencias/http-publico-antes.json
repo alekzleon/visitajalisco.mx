@@ -1,0 +1,167 @@
+[
+  {
+    "url": "https://visitajalisco.mx/",
+    "status": 200,
+    "final_url": "https://visitajalisco.mx/",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [
+      "XSRF-TOKEN",
+      "laravel_session"
+    ],
+    "bytes": 52882
+  },
+  {
+    "url": "https://visitajalisco.mx/aviso-de-privacidad",
+    "status": 200,
+    "final_url": "https://visitajalisco.mx/aviso-de-privacidad",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [
+      "XSRF-TOKEN",
+      "laravel_session"
+    ],
+    "bytes": 8440
+  },
+  {
+    "url": "https://visitajalisco.mx/politica-de-cookies",
+    "status": 404,
+    "final_url": "https://visitajalisco.mx/politica-de-cookies",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 6603
+  },
+  {
+    "url": "https://visitajalisco.mx/terminos-y-condiciones",
+    "status": 404,
+    "final_url": "https://visitajalisco.mx/terminos-y-condiciones",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 6603
+  },
+  {
+    "url": "https://visitajalisco.mx/contacto",
+    "status": 404,
+    "final_url": "https://visitajalisco.mx/contacto",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 6603
+  },
+  {
+    "url": "https://visitajalisco.mx/sobre-nosotros",
+    "status": 404,
+    "final_url": "https://visitajalisco.mx/sobre-nosotros",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 6603
+  },
+  {
+    "url": "https://visitajalisco.mx/ads.txt",
+    "status": 404,
+    "final_url": "https://visitajalisco.mx/ads.txt",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 6603
+  },
+  {
+    "url": "https://visitajalisco.mx/robots.txt",
+    "status": 200,
+    "final_url": "https://visitajalisco.mx/robots.txt",
+    "redirects": [],
+    "content_type": "text/plain",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 24
+  },
+  {
+    "url": "https://visitajalisco.mx/sitemap.xml",
+    "status": 404,
+    "final_url": "https://visitajalisco.mx/sitemap.xml",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 6603
+  },
+  {
+    "url": "https://visitajalisco.mx/destinos/ajijic",
+    "status": 404,
+    "final_url": "https://visitajalisco.mx/destinos/ajijic",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 6603
+  },
+  {
+    "url": "https://visitajalisco.mx/revision-adsense-ruta-inexistente-20261101",
+    "status": 404,
+    "final_url": "https://visitajalisco.mx/revision-adsense-ruta-inexistente-20261101",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [],
+    "bytes": 6603
+  },
+  {
+    "url": "http://visitajalisco.mx/",
+    "status": 200,
+    "final_url": "https://visitajalisco.mx/",
+    "redirects": [
+      {
+        "status": 301,
+        "location": "https://visitajalisco.mx/"
+      }
+    ],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [
+      "XSRF-TOKEN",
+      "laravel_session"
+    ],
+    "bytes": 52882
+  },
+  {
+    "url": "https://www.visitajalisco.mx/",
+    "status": 200,
+    "final_url": "https://www.visitajalisco.mx/",
+    "redirects": [],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [
+      "XSRF-TOKEN",
+      "laravel_session"
+    ],
+    "bytes": 52914
+  },
+  {
+    "url": "http://www.visitajalisco.mx/",
+    "status": 200,
+    "final_url": "https://www.visitajalisco.mx/",
+    "redirects": [
+      {
+        "status": 301,
+        "location": "https://www.visitajalisco.mx/"
+      }
+    ],
+    "content_type": "text/html; charset=utf-8",
+    "x_robots_tag": null,
+    "cookie_names": [
+      "XSRF-TOKEN",
+      "laravel_session"
+    ],
+    "bytes": 52914
+  }
+]

@@ -40,7 +40,30 @@ Route::get('/', function (Request $request) {
     ]);
 });
 
-Route::view('/aviso-de-privacidad', 'privacy')->name('privacy');
+// Información pública; sin cambios a los endpoints comerciales o de medición.
+foreach ([
+    'privacy' => '/aviso-de-privacidad',
+    'cookies' => '/politica-de-cookies',
+    'terms' => '/terminos-y-condiciones',
+    'about' => '/sobre-nosotros',
+    'contact' => '/contacto',
+] as $page => $path) {
+    Route::get($path, function () use ($page) {
+        return app(\App\Http\Controllers\InformationController::class)->show($page);
+    })->name($page);
+}
+
+// Guías turísticas independientes; no alteran los endpoints de tracking.
+Route::get('/destinos/{slug}', function (string $slug) {
+    $destination = config('destinations.' . $slug);
+    abort_unless(is_array($destination), 404);
+
+    return view('destinations.show', compact('slug', 'destination'));
+})->where('slug', '[a-z]+(?:-[a-z]+)*')->name('destinations.show');
+
+Route::get('/sitemap.xml', function () {
+    return response()->view('destinations.sitemap')->header('Content-Type', 'application/xml; charset=UTF-8');
+})->name('sitemap');
 
 Route::prefix('track')->name('track.')->group(function () {
     Route::get('/airbnbs/{airbnb}/reservar', [TrackingController::class, 'airbnbReserve'])->name('airbnbs.reserve');

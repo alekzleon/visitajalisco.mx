@@ -1,0 +1,286 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "label": "baseline",
+      "title": "Visita Jalisco | Hospedaje, rutas y comercios locales",
+      "h1": 1,
+      "overflow": false,
+      "images": [],
+      "links": 0,
+      "metrics": {
+        "lcp": 624,
+        "cls": 0
+      },
+      "video": 2
+    },
+    {
+      "width": 390,
+      "label": "home",
+      "title": "Visita Jalisco: destinos, pueblos y experiencias locales",
+      "h1": 1,
+      "overflow": false,
+      "images": [],
+      "links": 10,
+      "metrics": {
+        "lcp": 208,
+        "cls": 0
+      },
+      "video": 2,
+      "menu": true,
+      "carousel": {
+        "cards": 10,
+        "button": true
+      }
+    },
+    {
+      "width": 390,
+      "label": "tequila",
+      "title": "Qué hacer en Tequila, Jalisco | Visita Jalisco",
+      "h1": 1,
+      "overflow": false,
+      "images": [],
+      "links": 0,
+      "metrics": {
+        "lcp": 92,
+        "cls": 0
+      },
+      "video": 0
+    },
+    {
+      "width": 390,
+      "label": "ajijic",
+      "title": "Qué hacer en Ajijic, Jalisco | Visita Jalisco",
+      "h1": 1,
+      "overflow": false,
+      "images": [],
+      "links": 0,
+      "metrics": {
+        "lcp": 52,
+        "cls": 0
+      },
+      "video": 0
+    },
+    {
+      "width": 1440,
+      "label": "baseline",
+      "title": "Visita Jalisco | Hospedaje, rutas y comercios locales",
+      "h1": 1,
+      "overflow": false,
+      "images": [],
+      "links": 0,
+      "metrics": {
+        "lcp": 144,
+        "cls": 0
+      },
+      "video": 2
+    },
+    {
+      "width": 1440,
+      "label": "home",
+      "title": "Visita Jalisco: destinos, pueblos y experiencias locales",
+      "h1": 1,
+      "overflow": false,
+      "images": [],
+      "links": 10,
+      "metrics": {
+        "lcp": 132,
+        "cls": 0
+      },
+      "video": 2,
+      "menu": true,
+      "carousel": {
+        "cards": 10,
+        "button": true
+      }
+    },
+    {
+      "width": 1440,
+      "label": "tequila",
+      "title": "Qué hacer en Tequila, Jalisco | Visita Jalisco",
+      "h1": 1,
+      "overflow": false,
+      "images": [],
+      "links": 0,
+      "metrics": {
+        "lcp": 84,
+        "cls": 0
+      },
+      "video": 0
+    },
+    {
+      "width": 1440,
+      "label": "ajijic",
+      "title": "Qué hacer en Ajijic, Jalisco | Visita Jalisco",
+      "h1": 1,
+      "overflow": false,
+      "images": [],
+      "links": 0,
+      "metrics": {
+        "lcp": 48,
+        "cls": 0
+      },
+      "video": 0
+    }
+  ],
+  "guides": [
+    {
+      "slug": "tequila",
+      "title": "Qué hacer en Tequila, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/tequila"
+    },
+    {
+      "slug": "ajijic",
+      "title": "Qué hacer en Ajijic, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/ajijic"
+    },
+    {
+      "slug": "chapala",
+      "title": "Qué hacer en Chapala, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/chapala"
+    },
+    {
+      "slug": "lagos-de-moreno",
+      "title": "Qué hacer en Lagos de Moreno, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/lagos-de-moreno"
+    },
+    {
+      "slug": "mascota",
+      "title": "Qué hacer en Mascota, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/mascota"
+    },
+    {
+      "slug": "mazamitla",
+      "title": "Qué hacer en Mazamitla, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/mazamitla"
+    },
+    {
+      "slug": "cocula",
+      "title": "Qué hacer en Cocula, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/cocula"
+    },
+    {
+      "slug": "sayula",
+      "title": "Qué hacer en Sayula, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/sayula"
+    },
+    {
+      "slug": "tapalpa",
+      "title": "Qué hacer en Tapalpa, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/tapalpa"
+    },
+    {
+      "slug": "tlaquepaque",
+      "title": "Qué hacer en San Pedro Tlaquepaque, Jalisco | Visita Jalisco",
+      "main": true,
+      "image": true,
+      "canonical": "https://visitajalisco.mx/destinos/tlaquepaque"
+    }
+  ],
+  "backgroundImages": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "errors": [],
+  "localNetworkFailures": [
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8765/assets/video/jalisco_vd.mp4",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "failedResponses": []
+}

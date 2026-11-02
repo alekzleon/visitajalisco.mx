@@ -1,0 +1,15 @@
+{
+  "placeholder_ga_heredado": [
+    "config/services.php"
+  ],
+  "id_publicitario_ficticio": [],
+  "placeholder_legal": [],
+  "localhost_en_fuente_publica": [
+    "config/app.php",
+    "config/mail.php",
+    "config/database.php",
+    "config/cache.php",
+    "config/queue.php"
+  ],
+  "credenciales_visibles": []
+}

@@ -1,170 +1,41 @@
-<!DOCTYPE html>
-<html lang="es-MX">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://visitajalisco.mx/aviso-de-privacidad">
-    <link rel="icon" type="image/png" href="/assets/img/logos/icon.png">
-    <link rel="apple-touch-icon" href="/assets/img/logos/icon.png">
-    <title>Aviso de privacidad | Visita Jalisco</title>
-    <style>
-        :root {
-            --ink: #242424;
-            --muted: #68625b;
-            --paper: #fffaf3;
-            --panel: #ffffff;
-            --line: rgba(36, 36, 36, .12);
-            --green: #167a5a;
-            --pink: #e91e63;
-            --orange: #ff9f1c;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            background: var(--paper);
-            color: var(--ink);
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            line-height: 1.65;
-        }
-
-        a {
-            color: var(--green);
-            font-weight: 800;
-            text-decoration: none;
-        }
-
-        .legal-shell {
-            width: min(920px, calc(100% - 32px));
-            margin: 0 auto;
-            padding: 42px 0 70px;
-        }
-
-        .back-link {
-            display: inline-flex;
-            margin-bottom: 28px;
-            color: var(--green);
-        }
-
-        .legal-card {
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            background: var(--panel);
-            padding: clamp(24px, 5vw, 52px);
-            box-shadow: 0 20px 60px rgba(36, 36, 36, .07);
-        }
-
-        h1 {
-            margin: 0;
-            font-size: clamp(36px, 6vw, 64px);
-            line-height: .95;
-            letter-spacing: 0;
-        }
-
-        h2 {
-            margin: 34px 0 10px;
-            font-size: 24px;
-            line-height: 1.15;
-        }
-
-        p, li {
-            color: var(--muted);
-            font-size: 16px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .stamp {
-            display: inline-flex;
-            margin: 18px 0 0;
-            padding: 7px 10px;
-            border-radius: 999px;
-            background: rgba(255, 159, 28, .14);
-            color: #815000;
-            font-size: 13px;
-            font-weight: 900;
-        }
-
-        .notice {
-            margin-top: 22px;
-            border-left: 4px solid var(--pink);
-            padding: 14px 16px;
-            background: #fff5f9;
-            color: #7a2444;
-            font-weight: 800;
-        }
-
-        .creator-strip {
-            padding: 9px 20px;
-            background: #ffffff;
-            color: rgba(36, 36, 36, .62);
-            text-align: center;
-            font-size: 12px;
-            line-height: 1.2;
-        }
-
-        .creator-strip a {
-            color: var(--pink);
-            font-weight: 800;
-        }
-    </style>
-</head>
-<body>
-    <main class="legal-shell">
-        <a class="back-link" href="{{ url('/') }}">Volver a Visita Jalisco</a>
-
-        <article class="legal-card">
-            <h1>Aviso de privacidad</h1>
-            <span class="stamp">Última actualización: 12 de junio de 2026</span>
-
-            <p class="notice">Visita Jalisco es una plataforma comercial independiente. No pertenece, representa, administra ni sustituye a ninguna Secretaría de Turismo, ayuntamiento, dependencia pública o entidad de gobierno.</p>
-
-            <h2>Responsable del tratamiento</h2>
-            <p>Visita Jalisco, sitio web disponible en <strong>visitajalisco.mx</strong>, es responsable del tratamiento de los datos personales que, en su caso, sean proporcionados por usuarios, anunciantes, anfitriones o visitantes del portal.</p>
-            <p>Para asuntos relacionados con privacidad, derechos de datos personales o solicitudes sobre este aviso, el medio de contacto inicial será <strong>privacidad@visitajalisco.mx</strong>. Este correo puede actualizarse posteriormente conforme avance la operación comercial del proyecto.</p>
-
-            <h2>Datos personales que podemos tratar</h2>
-            <p>La navegación pública del sitio no solicita registro al turista. Los datos de navegación utilizados para estadísticas se limitan principalmente a cookies, identificadores técnicos, páginas visitadas, fecha y hora aproximada de acceso, dispositivo, navegador y comportamiento general dentro del sitio.</p>
-            <p>En caso de que existan formularios, cuentas de administrador, cuentas de Airbnb o cuentas de negocios, se podrán tratar datos como:</p>
-            <ul>
-                <li>Nombre o nombre comercial.</li>
-                <li>Correo electrónico de acceso o contacto.</li>
-                <li>Teléfono o WhatsApp comercial.</li>
-                <li>Información pública del negocio, hospedaje, promoción, imágenes, enlaces y redes sociales.</li>
-            </ul>
-            <p>No solicitamos datos personales sensibles como origen racial o étnico, estado de salud, información genética, creencias religiosas, opiniones políticas, preferencia sexual o cualquier otro dato de naturaleza sensible.</p>
-
-            <h2>Finalidades del tratamiento</h2>
-            <p>Los datos podrán utilizarse para operar el sitio, mostrar recomendaciones turísticas, publicar fichas de negocios locales, administrar espacios publicitarios, vincular Airbnbs con zonas cercanas, medir visitas y mejorar la experiencia de navegación.</p>
-            <p>Los datos estadísticos de navegación se usan de forma agregada para entender qué secciones se consultan, qué códigos de Airbnb generan visitas y cómo mejorar el contenido comercial y turístico.</p>
-
-            <h2 id="cookies">Uso de cookies</h2>
-            <p>Visita Jalisco utiliza cookies técnicas necesarias para el funcionamiento básico del sitio y cookies de analítica, como las relacionadas con Google Analytics cuando esté configurado, para conocer el comportamiento general de las visitas.</p>
-            <p>Estas cookies no tienen como finalidad identificar personalmente al turista, sino generar métricas de navegación. El usuario puede limitar, bloquear o eliminar cookies desde la configuración de su navegador.</p>
-
-            <h2>Transferencias de datos</h2>
-            <p>No vendemos datos personales de visitantes. La información pública de negocios y hospedajes se mostrará dentro del sitio conforme a la finalidad comercial contratada o autorizada.</p>
-            <p>Podremos compartir información con proveedores técnicos necesarios para operar el sitio, analítica, almacenamiento, seguridad, hosting o herramientas administrativas. También podremos entregar información cuando exista requerimiento legal de autoridad competente.</p>
-
-            <h2>Derechos ARCO</h2>
-            <p>La persona titular podrá solicitar acceso, rectificación, cancelación u oposición respecto de sus datos personales, así como revocar el consentimiento cuando sea legalmente procedente. Para atender una solicitud, se podrá requerir información que permita acreditar la identidad de la persona titular o su representación.</p>
-
-            <h2 id="terminos">Términos y condiciones básicos</h2>
-            <p>Al navegar en Visita Jalisco aceptas que el sitio muestra información turística, comercial y publicitaria de carácter informativo. Los enlaces a negocios, hospedajes, redes sociales, WhatsApp o plataformas externas son responsabilidad de sus respectivos titulares.</p>
-            <p>Visita Jalisco puede actualizar, pausar o retirar contenido, anuncios, fichas, imágenes o enlaces cuando sea necesario por operación, calidad, seguridad, vencimiento comercial o solicitud del anunciante.</p>
-            <p>El usuario acepta no utilizar el sitio para actividades fraudulentas, automatizadas, abusivas o que afecten el funcionamiento normal de la plataforma.</p>
-
-            <h2>Cambios al aviso</h2>
-            <p>Este aviso puede modificarse por cambios legales, técnicos, comerciales o de operación. Cualquier actualización se publicará en esta misma página, indicando la fecha de última modificación.</p>
-        </article>
-    </main>
-
-    <div class="creator-strip">
-        página creada por <a href="https://cloudi.mx" target="_blank" rel="noopener">cloudi.mx</a>
-    </div>
-</body>
-</html>
+@extends('information.layout')
+@section('information')
+    <h2>Responsable y contacto</h2>
+    <p>{{ config('site_operator.name') }} es responsable del tratamiento de datos personales en Visita Jalisco. Para asuntos de privacidad, derechos ARCO o revocación del consentimiento, escribe a <a href="mailto:{{ config('site_operator.privacy_email') }}">{{ config('site_operator.privacy_email') }}</a>.</p>
+    @if (config('site_operator.address'))<p>Domicilio: {{ config('site_operator.address') }}.</p>@endif
+    <p>Visita Jalisco es una plataforma comercial independiente que publica información turística de Jalisco y referencias a hospedajes, negocios y servicios. No representa a una autoridad de turismo ni a una institución de gobierno.</p>
+    <h2>Datos que se tratan</h2>
+    <ul>
+        <li>Cuando consultas un código de hospedaje, se recibe el código ingresado y se registra el resultado de la consulta.</li>
+        <li>Al navegar por las páginas que tienen medición o usar enlaces de seguimiento, se pueden registrar URL, referencia de origen, fecha y hora, tipo de evento, navegador, identificadores del contenido y metadatos de la interacción. El registro propio transforma la IP mediante una función hash con clave de aplicación; esto no se presenta como anonimización garantizada.</li>
+        <li>Las cuentas de acceso utilizan correo, contraseña y datos de sesión. Los paneles autorizados administran nombres y datos de contacto, imágenes y enlaces de negocios u hospedajes que sus responsables facilitan para publicación.</li>
+        <li>Si escribes al correo de contacto, se tratarán tu dirección y el contenido que envíes para atender el mensaje. Evita enviar datos sensibles o documentación innecesaria por correo.</li>
+    </ul>
+    <p>La consulta turística pública no requiere crear una cuenta. No existen campos públicos destinados a solicitar datos sensibles en los formularios inspeccionados.</p>
+    <h2>Finalidades del tratamiento</h2>
+    <p>Las finalidades de servicio son atender consultas, permitir el acceso autorizado, mostrar la información correspondiente al código de hospedaje, administrar el contenido facilitado por sus titulares y responder solicitudes de contacto o privacidad.</p>
+    <p>La medición de visitas y de interacciones permite conocer el uso del portal y de sus referencias comerciales. Esta finalidad de análisis se distingue de la consulta turística y del inicio de sesión. Puedes solicitar limitación u oposición mediante el correo de privacidad; su alcance se evaluará conforme a la normativa aplicable.</p>
+    <h2 id="cookies">Google Analytics y cookies</h2>
+    <p>El sitio utiliza Google Analytics en las páginas donde ya está integrado, para conocer el uso de la plataforma. Google recibe información técnica conforme a su servicio y configuración. También se mantienen registros de interacción propios del portal.</p>
+    <p>Consulta la <a href="{{ route('cookies', [], false) }}">Política de cookies</a> para conocer las tecnologías identificadas y el funcionamiento del aviso actual. El aviso de cookies no proporciona un control previo de la medición ni un sistema completo de preferencias.</p>
+    <p>Más información: <a href="https://policies.google.com/privacy?hl=es">privacidad de Google</a> y <a href="https://policies.google.com/technologies/partner-sites?hl=es">uso de información en sitios asociados</a>.</p>
+    <h2>Proveedores, enlaces y transferencias</h2>
+    <p>Google presta el servicio de analítica. La operación del sitio utiliza infraestructura de alojamiento y almacenamiento. La identificación contractual de esos proveedores, su ubicación de tratamiento y sus condiciones de conservación deben completarse en la revisión operativa del responsable.</p>
+    <p>Los datos comerciales autorizados para publicación aparecen en las fichas correspondientes. Cuando abres enlaces a plataformas de reserva, WhatsApp, mapas o redes sociales, sales hacia servicios que tienen sus propias condiciones y políticas. Antes de proporcionar información en ellos, revisa sus avisos.</p>
+    <p>Cualquier transferencia de datos que requiera consentimiento deberá informarse y sujetarse a las exigencias legales aplicables. No se presupone que aceptar este aviso autoriza finalidades o transferencias no descritas.</p>
+    <h2>Google AdSense y publicidad de terceros</h2>
+    <p>El portal incorpora el código de Google AdSense en la portada y las guías turísticas. La aparición efectiva de anuncios depende de la aprobación y configuración del sitio en la cuenta de Google.</p>
+    <p>Google y los proveedores publicitarios que participen pueden utilizar cookies y tecnologías similares para mostrar anuncios basados en visitas anteriores a este y otros sitios. La publicidad personalizada está sujeta a las opciones del usuario y a los consentimientos exigibles según su región. El aviso informativo actual del portal no gestiona esas preferencias.</p>
+    <p>Puedes administrar opciones de personalización en <a href="https://myadcenter.google.com/">Mi centro de anuncios</a> y consultar <a href="https://policies.google.com/technologies/ads?hl=es">cómo utiliza Google las tecnologías publicitarias</a>. Estas opciones no sustituyen los controles exigibles en el sitio. La lista de proveedores habilitados y la configuración regional deben revisarse en la cuenta AdSense y reflejarse en la información de privacidad.</p>
+    <h2>Derechos ARCO, limitación y revocación</h2>
+    <p>Para solicitar acceso, rectificación, cancelación u oposición, limitar el uso o divulgación de tus datos o revocar el consentimiento, escribe al correo de privacidad indicado al inicio. Describe qué solicitas y proporciona tu nombre, un medio de respuesta y la información necesaria para localizar los datos. Para rectificación, explica el cambio solicitado y aporta el soporte pertinente.</p>
+    <p>El responsable podrá solicitar la acreditación proporcional de tu identidad o representación mediante un procedimiento acordado para atender la solicitud. No envíes identificaciones o datos sensibles sin que se haya acordado cómo entregarlos.</p>
+    <p>Conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, la determinación sobre una solicitud ARCO se comunica en un máximo de veinte días hábiles desde su recepción; si procede, se hace efectiva dentro de los quince días hábiles siguientes a la comunicación. Las ampliaciones legalmente permitidas deben justificarse. La revocación no tiene efectos retroactivos y puede estar sujeta a obligaciones de conservación o excepciones legales.</p>
+    <h2>Conservación y seguridad</h2>
+    <p>La duración efectiva de los registros del servidor, eventos propios, correo y analítica depende de las prácticas y configuraciones del responsable y sus proveedores. No se ha establecido en este documento un plazo uniforme que sustituya esas configuraciones. El responsable debe definir y documentar los periodos de conservación y supresión aplicables.</p>
+    <p>El portal utiliza mecanismos de sesión, autenticación y protección de formularios. Esta descripción no constituye una promesa de invulnerabilidad ni una certificación de seguridad. Las medidas de infraestructura deben revisarse con los proveedores reales.</p>
+    <h2>Visitantes internacionales y actualizaciones</h2>
+    <p>Si una visita o un tratamiento está sujeto a normas de otra región, deberán evaluarse los derechos y consentimientos aplicables. No se afirma cumplimiento automático con todas las jurisdicciones. La publicidad para determinados territorios puede exigir una plataforma de consentimiento certificada.</p>
+    <p>Los cambios se comunicarán mediante una nueva versión de este aviso en esta URL, indicando su fecha; si una modificación requiere otro medio de información o consentimiento, el responsable deberá implementarlo antes del tratamiento correspondiente.</p>
+    <p id="terminos">Consulta también los <a href="{{ route('terms', [], false) }}">Términos y condiciones</a> y la página de <a href="{{ route('contact', [], false) }}">Contacto</a>.</p>
+@endsection

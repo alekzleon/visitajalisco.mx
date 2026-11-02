@@ -418,6 +418,7 @@
 
                 @yield('content')
             </main>
+            <footer style="padding:20px 24px">@include('partials.policy-links')</footer>
         </div>
     </div>
 </body>

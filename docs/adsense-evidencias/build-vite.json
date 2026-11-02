@@ -1,0 +1,21 @@
+{
+  "command": "npm run build -- --outDir /private/tmp/visitajalisco-adsense-vite-output",
+  "exit_code": 0,
+  "vite_version": "6.4.5",
+  "modules": 61,
+  "manifest": {
+    "resources/css/app.css": {
+      "file": "assets/app-fLsci6m2.css",
+      "src": "resources/css/app.css",
+      "isEntry": true
+    },
+    "resources/js/app.js": {
+      "file": "assets/app-Buj5iI_6.js",
+      "name": "app",
+      "src": "resources/js/app.js",
+      "isEntry": true
+    }
+  },
+  "package_json_modified": false,
+  "dependencies": "140 paquetes existentes instalados en carpeta temporal; sin lockfile o node_modules permanente del proyecto"
+}

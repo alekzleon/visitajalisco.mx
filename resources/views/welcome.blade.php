@@ -3,29 +3,17 @@
 <head>
     @php
         $siteName = 'Visita Jalisco';
-        $siteUrl = 'https://visitajalisco.mx';
-        $siteDescription = 'Visita Jalisco conecta turistas con hospedajes Airbnb, rutas, servicios y negocios locales cercanos a su estancia.';
+        $siteUrl = 'https://visitajalisco.mx/';
+        $siteDescription = 'Descubre diez destinos de Jalisco: paseos culturales, paisajes de la ribera y pueblos de sierra. Consulta guías para preparar tu visita y servicios locales.';
         $analyticsId = config('services.google_analytics.measurement_id');
-        $heroImage = $siteUrl . '/assets/img/hero-poster.svg';
+        $heroImage = $siteUrl . 'assets/img/destinos/tequila.jpg';
         $structuredData = [
             '@context' => 'https://schema.org',
-            '@type' => 'TouristInformationCenter',
+            '@type' => 'WebSite',
             'name' => $siteName,
             'url' => $siteUrl,
             'description' => $siteDescription,
-            'areaServed' => [
-                '@type' => 'AdministrativeArea',
-                'name' => 'Jalisco, México',
-            ],
-            'knowsAbout' => [
-                'Hospedaje Airbnb en Jalisco',
-                'Negocios locales en Jalisco',
-                'Rutas turísticas en Jalisco',
-                'Servicios para turistas',
-            ],
-            'sameAs' => [
-                'https://visitajalisco.mx',
-            ],
+            'inLanguage' => 'es-MX',
         ];
     @endphp
 
@@ -43,14 +31,14 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_MX">
     <meta property="og:site_name" content="{{ $siteName }}">
-    <meta property="og:title" content="Visita Jalisco | Hospedaje, rutas y negocios locales">
+    <meta property="og:title" content="Visita Jalisco: destinos, pueblos y experiencias locales">
     <meta property="og:description" content="{{ $siteDescription }}">
     <meta property="og:url" content="{{ $siteUrl }}">
     <meta property="og:image" content="{{ $heroImage }}">
-    <meta property="og:image:alt" content="Paisaje visual de Jalisco para turistas">
+    <meta property="og:image:alt" content="Vista de Tequila, Jalisco">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Visita Jalisco | Hospedaje, rutas y negocios locales">
+    <meta name="twitter:title" content="Visita Jalisco: destinos, pueblos y experiencias locales">
     <meta name="twitter:description" content="{{ $siteDescription }}">
     <meta name="twitter:image" content="{{ $heroImage }}">
 
@@ -68,7 +56,8 @@
         {!! json_encode($structuredData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
     </script>
 
-    <title>Visita Jalisco | Hospedaje, rutas y comercios locales</title>
+    <title>Visita Jalisco: destinos, pueblos y experiencias locales</title>
+    @include('partials.adsense-verification')
 
     <style>
         :root {
@@ -903,6 +892,11 @@
             box-shadow: 0 20px 42px rgba(0, 0, 0, .22);
         }
 
+        .place-card:focus-visible {
+            outline: 3px solid #fff;
+            outline-offset: -4px;
+        }
+
         .place-card::before {
             content: "";
             position: absolute;
@@ -1293,7 +1287,7 @@
                 </div>
 
                 <div class="hero-quick" aria-label="Redes sociales y volver arriba">
-                    <a class="icon-button" href="https://www.facebook.com/visitajaliscomx" target="_blank" aria-label="Facebook">f</a>
+                    <a class="icon-button" href="https://www.facebook.com/visitajaliscomx" target="_blank" rel="noopener" aria-label="Facebook">f</a>
                     {{-- <a class="icon-button" href="#" aria-label="Instagram">◎</a> --}}
                     {{-- <a class="icon-button" href="#" aria-label="Video">▶</a> --}}
                     <a class="icon-button scroll-top" href="#inicio" aria-label="Volver arriba">⌃</a>
@@ -1368,6 +1362,7 @@
 
                 <div class="places-shell">
                     <h2 class="places-title">Principales destinos</h2>
+                    <p>Elige un destino para conocer qué visitar y cómo preparar tu recorrido.</p>
 
                     <div class="places-frame">
                         <button class="places-arrow prev" type="button" data-places-prev aria-label="Destino anterior">‹</button>
@@ -1384,10 +1379,15 @@
                                 ['Tapalpa', '#285943', '#c5a46d', 'tapalpa.jpg'],
                                 ['San Pedro Tlaquepaque', '#7c2d2d', '#e0a458', 'tlaquepaque.jpeg'],
                             ] as [$destination, $colorA, $colorB, $image])
-                                <article class="place-card" style="--place-a: {{ $colorA }}; --place-b: {{ $colorB }}; --place-image: url('{{ asset('assets/img/destinos/' . $image) }}');">
+                                @php
+                                    $destinationSlug = \Illuminate\Support\Str::slug($destination === 'San Pedro Tlaquepaque' ? 'Tlaquepaque' : $destination);
+                                    $guide = config('destinations.' . $destinationSlug);
+                                    $cardImage = $guide['optimized_image'] ? 'optimized/' . $guide['optimized_image'] : $image;
+                                @endphp
+                                <a href="{{ route('destinations.show', ['slug' => $destinationSlug], false) }}" class="place-card" style="--place-a: {{ $colorA }}; --place-b: {{ $colorB }}; --place-image: url('{{ asset('assets/img/destinos/' . $cardImage) }}');">
                                     <strong>{{ $destination }}</strong>
                                     <span aria-hidden="true">›</span>
-                                </article>
+                                </a>
                             @endforeach
                         </div>
                         <button class="places-arrow next" type="button" data-places-next aria-label="Destino siguiente">›</button>
@@ -1397,7 +1397,7 @@
 
             <section class="section" id="locales">
                 <div class="section-inner">
-                    <span class="eyebrow">Tienes que visitarlo</span>
+                    <span class="eyebrow">{{ $publicAds->isNotEmpty() ? 'Publicidad · espacios comerciales' : 'Explora Jalisco' }}</span>
                     <h2>Si visitas Jalisco no te puedes perder de estos lugares mágicos</h2>
 
                     <div class="visit-grid">
@@ -1418,7 +1418,7 @@
 
             <section class="section services-band" id="servicios">
                 <div class="section-inner">
-                    <span class="eyebrow">Servicios que te pueden interesar</span>
+                    <span class="eyebrow">{{ $premiumServices->isNotEmpty() ? 'Servicios · contenido comercial' : 'Ideas de servicios · disponibilidad por confirmar' }}</span>
                     <h2>Soluciones pensadas para que tu viaje sea más cómodo, seguro y personalizado.</h2>
 
                     <div class="service-grid">
@@ -1485,9 +1485,7 @@
 
                 <div>
                     <h3>Legal</h3>
-                    <a href="{{ route('privacy') }}">Aviso de privacidad</a>
-                    <a href="{{ route('privacy') }}#cookies">Cookies</a>
-                    <a href="{{ route('privacy') }}#terminos">Términos y condiciones</a>
+                    @include('partials.policy-links')
                 </div>
             </div>
         </footer>
@@ -1497,10 +1495,10 @@
         </div>
 
         <div class="cookie-banner" data-cookie-banner role="dialog" aria-live="polite" aria-label="Aviso de cookies">
-            <p>Usamos cookies técnicas y de analítica para entender el comportamiento de navegación y mejorar Visita Jalisco. Al continuar aceptas nuestros <a href="{{ route('privacy') }}#terminos">términos y condiciones</a>, el uso de cookies y el <a href="{{ route('privacy') }}">aviso de privacidad</a>.</p>
+            <p>Usamos cookies técnicas y Google Analytics. Este aviso no cambia la medición. Consulta la <a href="{{ route('cookies', [], false) }}">política de cookies</a> para conocer cómo administrarlas en tu navegador, el <a href="{{ route('privacy', [], false) }}">aviso de privacidad</a> y los <a href="{{ route('terms', [], false) }}">términos y condiciones</a>.</p>
             <div class="cookie-actions">
-                <button class="secondary" type="button" data-cookie-close>Después</button>
-                <button type="button" data-cookie-accept>Aceptar</button>
+                <button class="secondary" type="button" data-cookie-close>Cerrar</button>
+                <button type="button" data-cookie-accept>Entendido</button>
             </div>
         </div>
     </div>
