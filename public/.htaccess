@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    # Also protect direct requests when public/ is the DocumentRoot.
+    RewriteRule (^|/)\.(?!well-known(/|$)) - [F,L]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -15,8 +18,9 @@
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    # Use the browser's original path, not an internally rewritten /public/ path.
+    RewriteCond %{THE_REQUEST} \s/+([^/?\s][^?\s]*?)/+[?\s]
+    RewriteRule ^ /%1 [L,R=301]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d

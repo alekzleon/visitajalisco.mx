@@ -1,0 +1,260 @@
+{
+  "rewrite": [
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": true,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/destinos/ajijic",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": true,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/destinos/ajijic/",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8791/destinos/ajijic",
+      "type": "text/html; charset=iso-8859-1",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/codigo-airbnb",
+      "method": "POST",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": true,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/assets/check.txt",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": "text/plain",
+      "public_front": false,
+      "public_asset": true,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/ads.txt",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": "text/plain",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": true
+    },
+    {
+      "path": "/robots.txt",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": "text/plain",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/composer.json",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": true,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/backup.zip",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": true,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/app/internal.php",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": true,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/.env",
+      "method": "GET",
+      "status": 403,
+      "location": null,
+      "type": "text/html; charset=iso-8859-1",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/.git/config",
+      "method": "GET",
+      "status": 403,
+      "location": null,
+      "type": "text/html; charset=iso-8859-1",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/public/.env",
+      "method": "GET",
+      "status": 403,
+      "location": null,
+      "type": "text/html; charset=iso-8859-1",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/.well-known/acme-challenge/check",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": false,
+      "public_asset": false,
+      "acme": true,
+      "private_leak": false,
+      "ads_correct": null
+    }
+  ],
+  "without_rewrite": [
+    {
+      "path": "/composer.json",
+      "method": "GET",
+      "status": 403,
+      "location": null,
+      "type": "text/html; charset=iso-8859-1",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 403,
+      "location": null,
+      "type": "text/html; charset=iso-8859-1",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    }
+  ],
+  "public_document_root": [
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": true,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/destinos/ajijic/?origen=prueba",
+      "method": "GET",
+      "status": 301,
+      "location": "http://127.0.0.1:8791/destinos/ajijic?origen=prueba",
+      "type": "text/html; charset=iso-8859-1",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/ads.txt",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": "text/plain",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": true
+    },
+    {
+      "path": "/.env",
+      "method": "GET",
+      "status": 403,
+      "location": null,
+      "type": "text/html; charset=iso-8859-1",
+      "public_front": false,
+      "public_asset": false,
+      "acme": false,
+      "private_leak": false,
+      "ads_correct": null
+    },
+    {
+      "path": "/.well-known/acme-challenge/check",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "type": null,
+      "public_front": false,
+      "public_asset": false,
+      "acme": true,
+      "private_leak": false,
+      "ads_correct": null
+    }
+  ]
+}

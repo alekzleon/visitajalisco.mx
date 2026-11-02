@@ -1,0 +1,21 @@
+# Apache / LiteSpeed: serve Laravel from public/ without moving project files.
+# When hosting settings allow it, public/ can still be used as DocumentRoot.
+Options -Indexes -MultiViews
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Block hidden files and directories; allow ACME domain verification.
+    RewriteRule (^|/)\.(?!well-known(/|$)) - [F,L]
+
+    # Let public/.htaccess process Laravel routes on the internal rewrite pass.
+    RewriteRule ^public(/|$) - [L]
+
+    # Never serve existing project-root files (source, archives, configuration).
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Fail closed if rewriting is unavailable: do not expose the project root.
+<IfModule !mod_rewrite.c>
+    Require all denied
+</IfModule>
